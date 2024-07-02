@@ -1,7 +1,7 @@
 import base64, zlib, random, argparse, string
 
-strLow = ''.join(string.ascii_lower)
-strCap = ''.join(string.ascii_upper)
+strLow = ''.join(string.ascii_lowercase)
+strCap = ''.join(string.ascii_uppercase)
 shift = random.randint(1, 20)
         
 def enc(inp):
@@ -86,8 +86,8 @@ def shiftScript(inp):
 
 decryptScript = f"""
 def decrypt(inp):
-    strLow = ''.join(string.ascii_lower)
-    strCap = ''.join(string.ascii_upper)
+    strLow = ''.join(string.ascii_lowercase)
+    strCap = ''.join(string.ascii_uppercase)
     data = []
     for i in inp: 
         if i.strip() and i in strLow: 
