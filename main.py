@@ -1,7 +1,7 @@
-import base64, zlib, random, argparse
+import base64, zlib, random, argparse, string
 
-strLow = "abcdefghijklmnopqrstuvwxyz"
-strCap = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+strLow = ''.join(string.ascii_lower)
+strCap = ''.join(string.ascii_upper)
 shift = random.randint(1, 20)
         
 def enc(inp):
