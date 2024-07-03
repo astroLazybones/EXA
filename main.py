@@ -85,6 +85,7 @@ def shiftScript(inp):
     return output+'"""))'
 
 decryptScript = f"""
+import string
 def decrypt(inp):
     strLow = ''.join(string.ascii_lowercase)
     strCap = ''.join(string.ascii_uppercase)
