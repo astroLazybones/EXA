@@ -86,8 +86,8 @@ def shiftScript(inp):
 
 decryptScript = f"""
 def decrypt(inp):
-    strLow = {strLow}
-    strCap = {strCap}
+    strLow = "{strLow}"
+    strCap = "{strCap}"
     data = []
     for i in inp: 
         if i.strip() and i in strLow: 
