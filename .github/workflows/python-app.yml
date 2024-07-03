@@ -32,7 +32,7 @@ jobs:
       - name: Run test-encrypted.py and check output
         run: |
           output=$(python test-encrypted.py)
-          if [[ "$output" == "Hello, World!" ]]; then
+          if [[ "$output" == 'Hello, World!' ]]; then
             echo "Test passed"
           else
             echo "Test failed"
