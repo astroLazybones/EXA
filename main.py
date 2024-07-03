@@ -124,13 +124,13 @@ if __name__ == "__main__":
     Parses command line arguments for the file encryption script.
     
     Args:
-        file_path (str): The path to the file to be encrypted.
+        FILE (str): File to encrypt.
     
     Returns:
         None
     """
-    parser = argparse.ArgumentParser(description="Encrypt & obfuscate a file's content")
-    parser.add_argument("file_path", type=str, help="Path to the file to be encrypted")
+    parser = argparse.ArgumentParser(description="Encrypts and obfuscates a python script.")
+    parser.add_argument("FILE", type=str, help="File to encrypt")
     
     args = parser.parse_args()
-    main(args.file_path)
+    main(args.FILE)
